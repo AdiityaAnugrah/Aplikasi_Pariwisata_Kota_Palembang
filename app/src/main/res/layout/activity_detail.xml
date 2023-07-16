@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailActivity">
+
+    <ImageView
+        android:id="@+id/ngambar"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="Foto"
+        android:scaleType="centerCrop"/>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">-->
+
+    <RelativeLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="52dp">
+
+        <TextView
+            android:id="@+id/nnamaWisatadetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:text="Nama Wisata"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nalamatdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="120dp"
+            android:text="Alamat"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="@id/nnamaWisatadetail" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="@string/sabar_ya_bos"
+            android:textColor="#757575"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="43dp"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            android:textDirection="locale"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/ndeskrispsidetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="43dp"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="@string/sabar_ya_bos"
+            android:textColor="#757575"
+            android:textStyle="italic" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="43dp"
+            tools:context=".activity.DetailActivity" />
+    </RelativeLayout>
+   <!-- </ScrollView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WISATA KOTA PALEMBANG</string>
+    <string name="sabar_ya_bos">----------------------------------------------------------------------------------------</string>
+    <string name="beranda">beranda</string>
+    <string name="pencarian">search</string>
+    <string name="favorit">favorit</string>
+    <string name="profile">profile</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="Katakatalogin">Maaf anda belum login, silahkan login terlebih dahulu</string>
+    <string name="no_data_found">Maaf, data yang Anda cari belum tersedia.</string>
+    <string name="error">Error</string>
+    <string name="retry">Coba Lagi</string>
+</resources>
